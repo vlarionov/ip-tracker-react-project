@@ -1,0 +1,229 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* start of Vlad css */
+
+#topLayer {
+  width: 100%;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+#ipInputField {
+  text-align: center;
+  height: 40px;
+  width: 350px;
+  font-size: 1.2em;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
+#searchIP {
+  height: 50px;
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+#displayInfo{
+  display: flex;
+  place-items: center;
+  border: 2px solid hsl(0, 0%, 58%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  flex-direction: row;
+  align-items: stretch;
+}
+
+/* css for field containers */
+#infoFieldFirst {
+  background-color: white;
+  padding: 20px;
+ 
+}
+
+#infoField{
+  background-color: white;
+  padding: 20px;
+  border-right: 3px solid #ccc;
+  border-left: 3px solid #ccc;
+ 
+}
+
+#infoFieldLast{
+  background-color: white;
+  padding: 20px;
+  
+}
+
+
+/* css for information fields */
+.fieldTitle {
+  color: hsl(0, 0%, 58%);
+  font-weight: 500;
+}
+
+
+#ipAddressValue {
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#locationValue {
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#timezoneValue {
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#ispValue{
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#bgLayer {
+  width: 100%;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  overflow: hidden; 
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  
+}
+
+/* breakpoint for small devices */
+@media only screen and (max-width: 600px) {
+  #displayInfo{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border: 2px solid hsl(0, 0%, 58%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  /* css for field containers */
+  #infoFieldFirst {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    padding-left: 70px;
+    flex-basis: 100%;
+
+  }
+
+  #infoField{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    padding-left: 70px;
+    border-right: none;
+    border-left: none;
+
+  }
+
+  #infoFieldLast{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    padding-left: 70px;
+    flex-basis: 100%;
+    /*flex-grow: 1;
+    height: 100%; */
+  }
+
+
+  /* css for information fields */
+  .fieldTitle {
+    color: hsl(0, 0%, 58%);
+    font-weight: 500;
+    font-size: 16px;
+    
+  }
+
+    #ipAddressValue {
+    color: hsl(0, 0%, 17%);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  #locationValue {
+    color: hsl(0, 0%, 17%);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  #timezoneValue {
+    color: hsl(0, 0%, 17%);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  #ispValue{
+    color: hsl(0, 0%, 17%);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+}
