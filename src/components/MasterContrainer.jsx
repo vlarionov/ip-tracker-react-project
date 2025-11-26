@@ -53,7 +53,7 @@ function MasterContainer() {
       <div id="bgLayer">
         <img
           id="bgImage"
-          src="src/images/pattern-bg-desktop.png"
+          src="https://github.com/vlarionov/ip-tracker-react-project/tree/main/src/images/pattern-bg-desktop.png"
           alt="Decoration Map"
         ></img>
 
