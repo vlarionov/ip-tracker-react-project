@@ -1,16 +1,13 @@
-# React + Vite
+Live demo of the application can be found at:
+https://vlarionov.github.io/ip-tracker-react-project/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+How to use the IP Adress Tracker
 
-Currently, two official plugins are available:
+Simply input an IP address or web domain into the search field and click the arrow button to obtain IP Adress, Location, Timezone, and ISP information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Notes: 
+- The application currently supports IPv4 only, it does not support IPv6. Attempting to search an IPv6 address will result in an alert being returned.
 
-## React Compiler
+- For web domain inputs omit the "https://" at the begining of the domain, otherwise the API will return an HTTP error. E.g. "mail.google.com" is a valid input, while "https://mail.google.com" will return an error.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- For web domain inputs the application only accepts web domains ending at the top level domain. E.g., "mail.google.com" is a valid input, while "mail.google.com/mail" will return an error. The application looks for the last dot followed by 2 to 6 alphanumeric characters, optionally followed by another dot and 2 alphanumeric characters for country code top level domains. E.g. "yandex.com.am" is a valid web domain input.

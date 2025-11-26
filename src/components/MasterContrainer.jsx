@@ -53,7 +53,7 @@ function MasterContainer() {
       <div id="bgLayer">
         <img
           id="bgImage"
-          src="./src/images/pattern-bg-desktop.png"
+          src="src/images/pattern-bg-desktop.png"
           alt="Decoration Map"
         ></img>
 
