@@ -30,7 +30,7 @@ function SearchBar(props) {
       />
 
       <button id="searchIP" onClick={handleClick}>
-        <img src="https://github.com/vlarionov/ip-tracker-react-project/tree/main/src/images/icon-arrow.svg" alt="Right arrow Icon" />
+        <img src="images/icon-arrow.svg" alt="Right arrow Icon" />
       </button>
     </div>
   );
